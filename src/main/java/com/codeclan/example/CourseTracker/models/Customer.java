@@ -20,10 +20,10 @@ public class Customer {
     @Column(name = "age")
     private int age;
 
-    @OneToMany(mappedBy = "booking")
+    @OneToMany(mappedBy = "customer")
     private List<Booking> bookings;
 
-    public Customer(String name, String town, int age, Booking booking) {
+    public Customer(String name, String town, int age) {
         this.name = name;
         this.town = town;
         this.age = age;

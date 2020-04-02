@@ -21,7 +21,7 @@ public class Course {
     @Column(name = "rating")
     private int rating;
 
-    @OneToMany(mappedBy = "booking")
+    @OneToMany(mappedBy = "course")
     private List<Booking> bookings;
 
 
